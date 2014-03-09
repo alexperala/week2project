@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dave Barclay</title>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+	</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="week2projectstyle.css" type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<img src="images/DaveBarclayHeadshot.jpg" class="intro">
+	<div class="name">
+		<h1>Dave</h1>
+		<h1>Barclay</h1>
+		<ul>
+			<li><a href="#tvfilm" alt="TV and Film">TV and Film</a></li>
+			<li><a href="#onstage" alt="On Stage">On Stage</a></li>
+			<li><a href="#contact" alt="Contact">Contact</a></li>
+			<li><a href="week2projectmediapage.html" alt="Media">Media</a></li>
+		</ul>
+	</div>
+	<div class="work">
+		<div class="acting">
+			<h2>Acting</h2>
+			<p>Dave has appeared in commercials for Mio, Canadian Tire and the Ontario Film Review Board, and the film Dead of Winter.</p>
+		</div>
+		<div class="standup">
+			<h2>Stand-Up</h2>
+			<p>Dave can be seen doing standup comedy throughout Toronto at venues such as the Rivoli and the Comedy Bar.</p>
+		</div>
+		<div class="theatre">
+			<h2>Theatre</h2>
+			<p>Dave is a founding member of Players Players, a theatre collective and sketch troupe responsible for the fringe hits DOGS! The Musical!! (‘The best dog-gone musical at the Fringe’ – The Toronto Star) and Science Fair! (***** - Eye Weekly; NNNN – Now Magazine).</p>
+		</div>
+		<div class="writing">
+			<h2>Writing</h2>
+			<p>In addition to the material he writes for his stand-up and his vaudeville duo, Parker & Seville, Dave has also written jokes for The Score.</p>
+		</div>
+	</div>
+	<p class="hello">What's his deal? Trying to be funny in any way possible, but mostly through acting on film, standup comedy and sketch comedy with well-regarded comedy duo Parker and Seville.</p>
+	<div class="main" id="tvfilm">
+		<img src="images/modeldave.jpg">
+		<h3>TV and Film</h3>
+		<p>Dave has co-starred in a series of commercials for Mio, appeared in a Canadian Tire gift card ad, and also appeared in the feature film Dead of Winter. In all cases he nailed it.</p>
+	</div>
+	<iframe width="853" height="480" src="http://www.youtube.com/embed/J6aVOC7FgBs?rel=0" frameborder="0" allowfullscreen></iframe>
+	<div class="main" id="onstage">
+		<img src="images/daveonstage.jpg" alt="Dave on stage">
+		<h3>On Stage</h3>
+		<p>Dave has appeared on stage doing his own stand-up shows, comedy brawls, as part of his Parker & Seville vaudeville duo, and he's also acted as part of a mystery dinner theater, which wasn't really on stage but was still live, so.</p>
+	</div>
+	<iframe width="640" height="480" src="http://www.youtube.com/embed/dO6EOCmOxfo?rel=0" frameborder="0" allowfullscreen></iframe>
+	<div class="main" id="contact">
+		<img src="images/lowneckdave.jpg" alt="Dave in a low neck shirt">
+		<h3>Contact</h3>
+		<p>Get in touch! Dave is on twitter, he's on email, he's surfing the web, he's even blogging. He's everywhere, he's doing it all. Holla at him.</p>
+		<div class="footer">
+			<div class="twitter">
+				<a href="https://twitter.com/DaveBarc" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow @DaveBarc</a>
+			</div>
+			<a href="week2projectcontactpage.html" class="contact" alt="Contact"><img src="images/contact.svg"></a>
+			<a class="wordpress" href="http://davesbooklist.wordpress.com/" alt="Dave's Book List Wordpress"><img src="images/wordpress-icon.png"></a>
+		</div>
+	</div>
+<script>
+	$(document).ready(function(){
+	  $('a[href*=#]').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+	    && location.hostname == this.hostname) {
+	      var $target = $(this.hash);
+	      $target = $target.length && $target
+	      || $('[name=' + this.hash.slice(1) +']');
+	      if ($target.length) {
+	        var targetOffset = $target.offset().top;
+	        $('html,body')
+	        .animate({scrollTop: targetOffset}, 1000);
+	       return false;
+	      }
+	    }
+	  });
+	});
+</script>
+</body>
+</html>

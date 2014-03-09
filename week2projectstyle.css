@@ -1,0 +1,287 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+body {
+	position: relative;
+	background-image: url(images/lightpaperfibers_@2X.png);
+}
+
+h1 {
+	margin:0;
+	margin-bottom:-30px;
+	font-family: 'Arvo', serif;
+	color:rgba(2,63,89,0.7);
+	font-size:100px;
+	letter-spacing:-2px;
+	text-shadow:0 1px white;
+}
+
+img.intro {
+	width: 100%;
+	height:auto;
+	display:block;
+	z-index:1;
+}
+
+div.name {
+	position: absolute;
+	top:100px;
+	left: 50px;
+	height:225px;
+	overflow:hidden;
+	-webkit-transition:0.25s all linear;
+}
+
+div.name:hover {
+	height:500px;
+}
+
+ul a:hover {
+	background:rgba(255,255,255,0.8);
+}
+
+ul {
+	margin-top:50px;
+}
+
+ul li {
+	list-style-type:none;
+	margin-top:15px;
+}
+
+ul a {
+	text-decoration: none;
+	font-size:18px;
+	font-family: 'Lora', serif;
+	font-size:25px;
+	color:rgba(2,63,89,0.7);
+	text-shadow:0 1px white;
+	background: rgba(255,255,255,0);
+	-webkit-transition:0.25s all linear;
+}
+
+h2 {
+	color:white;
+	font-family: 'Crete Round', serif;
+	margin-left:10px;
+	font-size:35px;
+	text-shadow:1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.work {
+	position: relative;
+	margin-top:-300px;
+	width: 100%;
+	height: 300px;
+	z-index:2;
+	border-bottom:3px solid black;
+}
+
+.work div {
+	float:left;
+	width:25%;
+	height: 100%;
+}
+	.acting {
+		background-image:url(https://i1.ytimg.com/vi/PUwVxmZlxOs/maxresdefault.jpg);
+		background-size:cover;
+	}
+	.standup {
+		background-image:url(images/standupdave.jpg);
+		background-size:cover;
+	}
+	.theatre {
+		background-image:url(images/vaudeville.jpg);
+		background-size:cover;
+	}
+	.writing {
+		background-image:url(images/davewithbook.jpg);
+		background-size:cover;
+	}
+
+.work div p {
+	display:none;
+	width:100%;
+	height: 100%;
+	color:white;
+	padding: 25px;
+}
+
+.work div:hover {
+	background:rgba(252,23,23,0.4);
+}
+
+.work div:hover > p {
+	display:block;
+}
+
+p.hello {
+	font-size:30px;
+	text-align:center;
+	margin:50px 15% 50px 15%;
+}
+
+div.main {
+	width:100%;
+	padding:10px 0 10px 0;
+	height: 300px;
+	border-top:3px solid black;
+	border-bottom: 3px solid black;
+	box-shadow:0 1px 2px black, 0 -1px 2px black;
+	background: -moz-linear-gradient(left,  rgba(0,0,0,0.15) 0%, rgba(0,0,0,1) 71%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.15)), color-stop(71%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,0.15) 0%,rgba(0,0,0,1) 71%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(0,0,0,0.15) 0%,rgba(0,0,0,1) 71%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(0,0,0,0.15) 0%,rgba(0,0,0,1) 71%,rgba(0,0,0,1) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(0,0,0,0.15) 0%,rgba(0,0,0,1) 71%,rgba(0,0,0,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+}
+
+h3 {
+	float:left;
+	margin:20px 0 20px 10px;
+	font-family: 'Crete Round', serif;
+	display:block;
+	font-size:35px;
+	color:white;
+	letter-spacing:-1px;
+	text-shadow:1px 1px 15px rgba(2,63,89,0.7), -1px -1px 15px rgba(2,63,89,0.7);
+}
+
+.main p {
+	clear:left;
+	width:50%;
+	float:left;
+	margin-left:5%;
+	font-size:20px;
+	line-height:30px;
+	font-family: 'Lora', serif;
+	color:white;
+	}
+
+.main img {
+	float:right;
+	height:100%;
+	width:auto;
+}
+
+iframe {
+	display:block;
+	margin:50px auto;
+	border:3px solid black;
+	box-shadow:1px 1px 3px black, -1px -1px 3px black;
+}
+
+.footer {
+	position: absolute;
+	width:40%;
+	height:100px;
+	left:30%;
+	bottom:0;
+}
+
+.twitter {
+	float:left;
+}
+
+a.contact {
+	float:left;
+	margin-left:30%;
+	margin-top:35px;
+}
+
+a.contact img {
+	width:70px;
+	height:auto;
+}
+
+a.wordpress {
+	margin-top:36px;
+	float:right;
+}
+	.wordpress img {
+		width:50px;
+		height:auto;
+	}
+
+form {
+	position: absolute;
+	top:200px;
+	left:5%;
+}
+
+h4 {
+	margin:40px 0 20px 7%;
+	font-family: 'Arvo', serif;
+	color:rgba(2,63,89,0.7);
+	font-size:80px;
+	letter-spacing:-2px;
+	text-shadow:5px 5px white;
+}
+
+input, label, textarea {
+	display:block;
+	clear:both;
+	margin:5px;
+}
+
+input[type=text] {
+	display:inline-block;
+	width:250px;
+}
+
+input[type=email] {
+	width:515px;
+}
+
+label {
+	margin-top:20px;
+}
+
+input[type=submit] {
+	margin-left:420px;
+	margin-top:-5px;
+	color:white;
+	background:rgba(2,63,89,0.7);
+	border-radius:5px;
+}
+
+img.contactDave {
+	position: absolute;
+	width:50%;
+	height:auto;
+	top:-80px;
+	right:0;
+	border-left:3px solid black;
+	box-shadow:-1px 0 2px black;
+}
+
+h5 {
+	padding:5px;
+	padding-left:10%;
+	font-family: 'Crete Round', serif;
+	font-size:35px;
+	color:rgba(2,63,89,0.7);
+	letter-spacing:-1px;
+	text-shadow:0px 2px white;
+	border-top:2px solid black;
+	border-bottom:2px solid black;
+	background:rgba(0,0,0,0.1);
+}
+
+.twitter-follow-button {
+	border:none;
+	box-shadow:none;
+}
